@@ -20,7 +20,7 @@ for i in range(1,20):
     y_pred = knn.predict(x_test)
     err_rate.append(np.mean(y_pred!= y_test))
 
-optimal_k = k = err_rate.index(min(err_rate))
+optimal_k = k = err_rate.index(min(err_rate)) + 1
 
 print("Minimun error  = ",min(err_rate)*100,"%")
 print("Value of k for minimum error = ",optimal_k)
